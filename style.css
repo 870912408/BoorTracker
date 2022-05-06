@@ -1,0 +1,282 @@
+/* CSS RESET  */
+/* ( * )  IS USED FOR UNIVERSAL OPERTAOR */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* STYLING NAVIGATION BAR */
+#navbar
+{
+    display: flex; /*making display flexbox*/
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+
+#navbar::before
+{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: -0.6;
+}
+
+
+/* NAVIGATION : STYLING LIST ITEMS */
+#navbar ul
+{
+    display: flex;
+}
+
+
+#navbar ul li
+{
+    list-style: none;  /* Bindu Bindu hatane ke liye use hota hai*/
+    font-size: 1.3rem;
+}
+
+#navbar ul li a
+{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none; /* Underline hatane ke liye use hota hai */
+}
+
+
+#navbar ul li a:hover
+{
+    color: black;
+    background-color: white;
+}
+
+/* NAVIGATION : LOGO AND IMAGES */
+#logo
+{
+    margin: 0px 0px;
+
+}
+
+
+#logo img
+{
+    height: 48px;
+    margin: 16px 8px;
+}
+
+
+/* Home Section */
+#home
+{
+    display: flex; /*sidha kr deg*/
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 545px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#home::before
+{
+    content: "";
+    position: absolute;
+    background: url('./images/2222.gif') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1
+{
+    color: rgb(46, 9, 9);
+    text-align: center;
+}
+
+#home p
+{
+    color: rgb(46, 9, 9);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+#home h1{
+    color: white;
+    text-align: center;
+
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+/* SERVICES SECTIONS */
+
+
+#services
+{
+    display: flex;
+    margin: 34px;
+    background-color: black;
+    padding: 1rem;
+}
+#services .box
+{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 61x;
+    border-radius: 28px;
+    background-color: rgb(226 226 226);
+    margin-bottom: 20px;
+}
+#services .box img
+{
+    height: 160px;
+}
+#services .box img
+{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+
+
+/* CLIENT SECTIONS */
+#client-section
+{
+    height: 344px;
+    position: relative;
+}
+#client-section::before
+{
+    content: "";
+    position: absolute;
+    background: url('./images/heeraa.gif ') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section img
+{
+    height: 124px;
+}
+.client-item
+{
+    padding: 20px;
+}
+
+
+
+/* CONTACT SECTIONS */
+
+#contact
+{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('./images/contacttt.gif') no-repeat center center/cover;
+}
+
+
+footer
+{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
+
+#contact_box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+}
+#contact_box input,
+#contact_box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    opacity: 0.4;
+    border-radius: 20px;
+
+}
+
+
+#contact_box form
+{
+    width: 40%;
+}
+
+#contact_box form
+{
+    font-size: 1.3rem;
+}
+
+
+
+
+/* UTILITY CLASS : MAINTAINABLE CODE BASE KE liye use krte hai */
+
+.h-primary
+{
+    font-size: 2.3rem;
+    padding: 0px;
+    text-align: center;
+    color: black;
+}
+
+.h-secondry
+{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+
+.btn
+{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
